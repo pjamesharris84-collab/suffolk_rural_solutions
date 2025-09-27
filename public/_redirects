@@ -1,1 +1,5 @@
 http://* https://:splat 301!
+http://*                               https://www.suffolkruralsolutions.co.uk/:splat  301!
+https://suffolkruralsolutions.co.uk/*  https://www.suffolkruralsolutions.co.uk/:splat  301!
+https://suffolkruralsolutions.com/*    https://www.suffolkruralsolutions.co.uk/:splat  301!
+https://www.suffolkruralsolutions.com/* https://www.suffolkruralsolutions.co.uk/:splat 301!
