@@ -11,44 +11,108 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background: #4B5320; /* military green */
       color: #fff;
       text-align: center;
+      padding: 24px;
     }
     .box {
       background: rgba(255, 255, 255, 0.1);
       padding: 2rem 3rem;
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      max-width: 500px;
+      max-width: 540px;
+      width: 100%;
     }
     img {
       max-width: 140px;
       margin-bottom: 1rem;
+      border-radius: 12px;
     }
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      font-weight: 700;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.125rem;
       margin-bottom: 0.5rem;
+      line-height: 1.6;
     }
     a {
       color: #E5DAC5;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 700;
+    }
+    .divider {
+      width: 96px;
+      height: 2px;
+      background: rgba(229, 218, 197, 0.8); /* khaki-light/80 */
+      border-radius: 999px;
+      margin: 12px auto 18px auto;
+    }
+    .socials {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+    .socials a {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .socials a:hover {
+      background: rgba(255,255,255,0.22);
+      transform: translateY(-1px);
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
     }
   </style>
 </head>
 <body>
   <div class="box">
+    <!-- If you have a logo at /public/logo.jpg it will show here -->
     <img src="/logo.jpg" alt="Suffolk Rural Solutions Logo" />
     <h1>Suffolk Rural Solutions</h1>
+    <div class="divider"></div>
     <p>🌿 Professional gardening & landscaping across Suffolk</p>
     <p><em>Our new website is coming soon</em></p>
-    <p>Contact us: <a href="mailto:info@suffolkruralsolutions.co.uk">info@suffolkruralsolutions.co.uk</a></p>
+    <p>
+      Contact us: 
+      <a href="mailto:info@suffolkruralsolutions.co.uk">info@suffolkruralsolutions.co.uk</a>
+    </p>
+
+    <div class="socials">
+      <a
+        href="https://www.facebook.com/suffolkruralsolutions"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Suffolk Rural Solutions on Facebook"
+        title="Facebook"
+      >
+        <!-- Facebook SVG icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#E5DAC5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691V11.01h3.129V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.796.143v3.241l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.315h3.59l-.467 3.696h-3.123V24h6.127C23.407 24 24 23.407 24 22.676V1.325C24 .593 23.407 0 22.675 0z"/>
+        </svg>
+        <span class="sr-only">Facebook</span>
+      </a>
+    </div>
   </div>
 </body>
 </html>
