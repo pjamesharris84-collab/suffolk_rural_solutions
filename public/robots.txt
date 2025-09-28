@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.suffolkruralsolutions.co.uk/sitemap.xml
